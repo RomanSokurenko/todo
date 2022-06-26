@@ -35,13 +35,13 @@ function App() {
   return (
     <Buffer.Provider value={{ removeTodo }}>
       <div className="wrapper">
-        <h1>Todushe4ka</h1>
+        <h1 className="title">Todushe4ka</h1>
         <AddTodo onCreate={addTodo} />
 
         {todos.length ? (
           <TodoList todos={todos} onToggle={toggleTodo} />
         ) : (
-          <p>У вас не має заміток!</p>
+          <p className="todo__text">У вас не має заміток!</p>
         )}
       </div>
     </Buffer.Provider>
